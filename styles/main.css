@@ -9,17 +9,22 @@
 
 body {
   height: 100vh;
-  background: rgba(0,2,37,1);
+  /* background: #060a45; */
+  background: rgb(0,2,37);
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   font-weight: normal;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 main {
-  background: #060a45;
+  height: 100vh;
+  background: rgba(16,25,110,1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .masthead {
@@ -55,9 +60,13 @@ h2:last-child {
 }
 
 .content {
-  margin: 10% 10% 10%;
+  padding: 10%;
+  background: inherit;
+}
+
+.content-container {
   display: grid;
-  width: 80%;
+  width: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 1.75rem;
@@ -65,6 +74,7 @@ h2:last-child {
   font-family: 'Lato', sans-serif;
   font-size: 2rem;
   font-weight: 400;
+  background-color: inherit;
 }
 
 .content_wrap {
@@ -118,13 +128,14 @@ h2:last-child {
 }
 
 .social {
-  margin: 2rem 0 5rem;
+  padding: 2rem 0 5rem;
   width: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
+  background: inherit;
 }
 
 .fab {
@@ -137,8 +148,8 @@ footer {
   justify-content: center;
   align-items: center;
   color: white;
-  background: rgb(0,2,37);
-background: linear-gradient(0deg, rgba(0,2,37,1) 0%, rgba(0,2,37,0) 100%);
+  /* background: rgb(0,2,37); */
+  background: linear-gradient(0deg, rgba(0,2,37,1) 10%, rgba(16,25,110,1) 100%);
 }
 
 footer h6 {
