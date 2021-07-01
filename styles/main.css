@@ -59,75 +59,84 @@ h2:last-child {
   letter-spacing: .5rem;
 }
 
-.content {
+.xp {
   padding: 10%;
   background: inherit;
 }
 
-.content-container {
+.xp-container {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-gap: 1.75rem;
-  align-items: center;
   font-family: 'Lato', sans-serif;
   font-size: 2rem;
   font-weight: 400;
   background-color: inherit;
 }
 
-.content_wrap {
+.xp_wrap {
   display: flex;
-  border: 6px solid blue;
+  flex-direction: column;
+  background: white;
   width: auto;
-  height: 16rem;
+  height: auto;
   border-radius: 22px;
   align-items: center;
   text-decoration: none;
+  padding: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  list-style-position: inside;
 }
 
 #web-card {
-  background-color: darkcyan;
 }
 
 #web-card:hover {
 }
 
-#about-card {
-  background-color: gold;
-}
-
 #art-card {
-  background-color: #660066;
 }
 
-#contact-card {
-  background: black;
-}
-
-.content_wrap_item {
+.xp_wrap_item {
   background-color: none;
   align-items: stretch;
-  margin: auto;
 }
 
-.content_wrap_item h3 {
+.xp_wrap_item h3 {
   text-align: center;
   color: black;
+  font-size: 1.75rem;
 }
 
-.content_wrap_item p {
+.xp_wrap_item h4 {
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.xp_wrap_item li {
+  text-align: center;
+  color: black;
+  font-size: 1.25rem;
+  font-family: "Lato", sans-serif;
+}
+
+.xp_wrap_item p {
   font-size: 1.5rem;
   font-family: "Lato", sans-serif;
   color: white;
 }
 
-#contact-card h3 {
+.work {
   color: white;
 }
 
-.social {
+.social, .contact {
   padding: 2rem 0 5rem;
   width: auto;
   display: flex;
@@ -136,12 +145,16 @@ h2:last-child {
   align-items: center;
   align-content: center;
   background: inherit;
+  color: white;
 }
 
-.fab {
+a .fab, a .far {
+  color: white;
+  background: none;
   font-size: 5rem;
   justify-content: space-around;
 }
+
 
 footer {
   display: flex;
