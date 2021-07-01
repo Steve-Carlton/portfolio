@@ -59,6 +59,10 @@ h2:last-child {
   letter-spacing: .5rem;
 }
 
+.welcome {
+  color: white;
+}
+
 .xp {
   padding: 10%;
   background: inherit;
@@ -136,23 +140,45 @@ ul {
   color: white;
 }
 
-.social, .contact {
-  padding: 2rem 0 5rem;
+.contact {
+  padding: 2rem 0 2rem;
+  width: auto;
+  text-align: center;
+  background: inherit;
+  color: white;
+}
+
+.contact-icons {
   width: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   align-content: center;
   background: inherit;
   color: white;
 }
 
+.email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0;
+}
+
 a .fab, a .far {
   color: white;
+  margin: 1.5rem;
   background: none;
   font-size: 5rem;
   justify-content: space-around;
+  transition: all .125s ease 0s;
+}
+
+.fab:hover, .far:hover {
+  transform: scale(1.125, 1.125) translateY(-0.5rem);
+  /* transform:  */
 }
 
 
