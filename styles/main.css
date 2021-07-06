@@ -55,16 +55,42 @@ h1 {
 }
 
 h2:last-child {
+  margin-top: 1.5rem;
   font-weight: 300;
   letter-spacing: .5rem;
 }
 
 .welcome {
+  background: white;
+  border-radius: 8px;
+  margin: 6rem 4rem 1rem;
+  padding: 3rem 2rem 3rem 3rem;
+}
+
+.welcome header {
+  position: relative;
+}
+
+.welcome span {
+  position: absolute;
   color: white;
+  font-size: 5rem;
+  font-weight: 500;
+  transform: translateX(50%);
+  margin: -7.5rem auto 0;
+}
+
+.welcome p {
+  position: relative;
+  color: grey;
+  font-weight: 200;
+  line-height: 3rem;
+  text-indent: 3rem;
+  font-style: italic;
 }
 
 .xp {
-  padding: 10%;
+  padding: 5% 10%;
   background: inherit;
 }
 
@@ -178,7 +204,6 @@ a .fab, a .far {
 
 .fab:hover, .far:hover {
   transform: scale(1.125, 1.125) translateY(-0.5rem);
-  /* transform:  */
 }
 
 
