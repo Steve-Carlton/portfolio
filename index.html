@@ -83,13 +83,80 @@
       <!-- thumbnail gallery/modal onclick, display description on hover -->
       <h3>work samples section</h3>
       <section class="thumbnails">
-        <img src="./img/FPO_PXL_20210703_201455291.jpg" alt="" onclick="openModal" width="25%">
+        <!-- <img src="./img/FPO_PXL_20210703_201455291.jpg" alt="" onclick="openModal" width="25%">
         <img src="./img/FPO_PXL_20210705_212543909.jpg" alt="" width="25%">
-        <img src="./img/FPO_07_SC_1701009_1000px.png" alt="" width="25%">
+        <img src="./img/FPO_07_SC_1701009_1000px.png" alt="" width="25%"> -->
       </section>
     </section>
     <!-- GALLERY MODAL -->
+    <!-- Images used to open the lightbox (thumbnails) -->
+    <div class="row">
+      <div class="column">
+        <img src="./img/FPO_PXL_20210703_201455291.jpg" onclick="openModal();currentSlide(1)" width="15%" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="./img/FPO_PXL_20210705_212543909.jpg" onclick="openModal();currentSlide(2)" width="15%" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="./img/FPO_07_SC_1701009_1000px.png" onclick="openModal();currentSlide(3)" width="15%" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="./img/FPO_PXL_20210705_212543909.jpg" onclick="openModal();currentSlide(4)" width="15%" class="hover-shadow">
+      </div>
+    </div>
 
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="./img/FPO_PXL_20210703_201455291.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="./img/FPO_PXL_20210705_212543909.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="./img/FPO_07_SC_1701009_1000px.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="./img/FPO_PXL_20210705_212543909.jpg" style="width:100%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <div class="column">
+          <img class="demo" src="./img/FPO_PXL_20210703_201455291.jpg" width="20%" onclick="currentSlide(1)" alt="Dog">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="./img/FPO_PXL_20210705_212543909.jpg" width="20%" onclick="currentSlide(2)" alt="Bike">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="./img/FPO_07_SC_1701009_1000px.png" width="20%" onclick="currentSlide(3)" alt="Fresh Lincoln">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="./img/FPO_PXL_20210705_212543909.jpg" width="20%" onclick="currentSlide(4)" alt="Bike2">
+        </div>
+      </div>
+    </div>
     <!-- GALLERY MODAL END-->
 
     <section class="contact">
