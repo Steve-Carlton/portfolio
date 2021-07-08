@@ -160,21 +160,38 @@ hr {
 .work {
   color: white;
   background: rgba(16,25,110,1);
+  text-align: center;
   padding: 1rem;
 }
 
 .thumbnails {
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
 
 .thumbnails img {
-  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 550px) {
+  .thumbnails {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 /* ==========MODAL BEGIN========== */
+.row {
+  background-color: rgba(16,25,110,1);
+}
+
 .row > .column {
   padding: 0 8px;
 }
@@ -208,11 +225,10 @@ hr {
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
   margin: auto;
   padding: 0;
   width: 90%;
-  max-width: 1200px;
+  max-width: 1920px;
 }
 
 /* The Close Button */
@@ -308,16 +324,16 @@ img.hover-shadow {
   text-align: center;
   background: inherit;
   color: white;
+  background: linear-gradient(0deg, rgba(0,2,37,1) 0%, rgba(16,25,110,1) 100%);
 }
 
-.contact-icons {
+.contact_icons {
   width: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-  background: inherit;
   color: white;
 }
 
@@ -348,8 +364,7 @@ footer {
   justify-content: center;
   align-items: center;
   color: white;
-  background: rgb(0,2,37);
-  background: linear-gradient(0deg, rgba(0,2,37,1) 10%, rgba(16,25,110,1) 100%);
+  background: none;
 }
 
 footer h6 {
