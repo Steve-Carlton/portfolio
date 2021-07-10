@@ -164,6 +164,10 @@ hr {
   padding: 1rem;
 }
 
+.work h3 {
+  margin:  0 0 1rem 0;
+}
+
 .thumbnails {
   display: flex;
   flex-direction: column;
@@ -171,6 +175,7 @@ hr {
   gap: 2rem;
   justify-content: space-between;
   align-items: center;
+  margin: 0 0 1rem 0;
 }
 
 .thumbnails img {
@@ -182,7 +187,7 @@ hr {
 .thumbnails img:hover, .thumbnails img:focus {
   width: 100%;
   border-radius: 8px;
-  transform: scale(1.125, 1.125);
+  transform: scale(1.05, 1.05);
 }
 
 
@@ -334,7 +339,7 @@ img.hover-shadow {
 /* ==========MODAL END========== */
 
 .contact {
-  padding: 2rem 0 2rem;
+  padding: 0 0 2rem;
   width: auto;
   text-align: center;
   background: inherit;

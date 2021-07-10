@@ -86,101 +86,104 @@
         <a href="https://admiring-shaw-47ed8b.netlify.app/" target="_blank"><img src="./img/ProjectDocumentation/Dev/SP_Tile300x200px.jpg" alt=""></a>
         <a href="https://www.brucewilsonauthor.com" target="_blank"><img src="./img/ProjectDocumentation/Dev/BWJ_Tile300px.jpg" alt=""></a>
       </section>
+
+      <!-- MODAL GALLERY BEGIN -->
+      <!-- Images used to open the lightbox (thumbnails) -->
+      <div class="row thumbnails">
+        <div class="column">
+          <img  src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/82870-KFCColonel-300x200px.jpg" onclick="openModal();currentSlide(1)" width="100%" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/AmazonBuildOn-300x200px.jpg" onclick="openModal();currentSlide(2)" width="100%" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/87642_LH_HolidayLightGiftCard-300x200px.jpg" onclick="openModal();currentSlide(3)" width="100%" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/RenaissanceUnveiledCovers-300x200px.jpg" onclick="openModal();currentSlide(4)" width="100%" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/76207_SpringTestLifestyle_PortfolioPage-300x200px.jpg" onclick="openModal();currentSlide(5)" width="100%" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/BreakDanceLincoln-300x200px.jpg" onclick="openModal();currentSlide(6)" width="100%" class="hover-shadow">
+        </div>
+      </div>
+
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="./img/ProjectDocumentation/GraphicArt/Slides-1920px/82870-KFCColonel-1920px.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="./img/ProjectDocumentation/GraphicArt/Slides-1920px/AmazonBuildOn-1920px.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="./img/ProjectDocumentation/GraphicArt/Slides-1920px/87642_LH_HolidayLightGiftCard-1920px.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="./img/ProjectDocumentation/GraphicArt/Slides-1920px/RenaissanceUnveiledCovers-1920px.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="./img/ProjectDocumentation/GraphicArt/Slides-1920px/76207_SpringTestLifestyle_PortfolioPage-1920px.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="./img/ProjectDocumentation/GraphicArt/Slides-1920px/BreakDanceLincoln-1920px.jpg" style="width:100%">
+          </div>
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- MODAL Thumbnail CONTROLS -->
+          <div class="column">
+            <img class="demo" src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/82870-KFCColonel-300x200px.jpg" width="50%" onclick="currentSlide(1)" alt="KFC Photo-comp POP Display">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/AmazonBuildOn-300x200px.jpg" width="50%" onclick="currentSlide(2)" alt="AWS custom graphics">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/87642_LH_HolidayLightGiftCard-300x200px.jpg" width="50%" onclick="currentSlide(3)" alt="Longhorn Holiday Promo">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/RenaissanceUnveiledCovers-300x200px.jpg" width="50%" onclick="currentSlide(4)" alt="Custom Book Covers">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/76207_SpringTestLifestyle_PortfolioPage-300x200px.jpg" width="50%" onclick="currentSlide(5)" alt="LJS Print Ad">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/BreakDanceLincoln-300x200px.jpg" width="50%" onclick="currentSlide(6)" alt="Original Vector Illustration">
+          </div>
+        </div>
+      </div>
+      <!-- MODAL GALLERY END-->
+
     </section>
-    <!-- MODAL GALLERY BEGIN -->
-    <!-- Images used to open the lightbox (thumbnails) -->
-    <div class="row work thumbnails">
-      <div class="column">
-        <img  src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/82870-KFCColonel-300x200px.jpg" onclick="openModal();currentSlide(1)" width="100%" class="hover-shadow">
-      </div>
-      <div class="column">
-        <img src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/AmazonBuildOn-300x200px.jpg" onclick="openModal();currentSlide(2)" width="100%" class="hover-shadow">
-      </div>
-      <div class="column">
-        <img src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/87642_LH_HolidayLightGiftCard-300x200px.jpg" onclick="openModal();currentSlide(3)" width="100%" class="hover-shadow">
-      </div>
-      <div class="column">
-        <img src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/RenaissanceUnveiledCovers-300x200px.jpg" onclick="openModal();currentSlide(4)" width="100%" class="hover-shadow">
-      </div>
-      <div class="column">
-        <img src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/76207_SpringTestLifestyle_PortfolioPage-300x200px.jpg" onclick="openModal();currentSlide(5)" width="100%" class="hover-shadow">
-      </div>
-      <div class="column">
-        <img src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/BreakDanceLincoln-300x200px.jpg" onclick="openModal();currentSlide(5)" width="100%" class="hover-shadow">
-      </div>
-    </div>
 
-    <!-- The Modal/Lightbox -->
-    <div id="myModal" class="modal">
-      <span class="close cursor" onclick="closeModal()">&times;</span>
-      <div class="modal-content">
-
-        <div class="mySlides">
-          <div class="numbertext">1 / 4</div>
-          <img src="./img/ProjectDocumentation/GraphicArt/Slides-1920px/82870-KFCColonel-1920px.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">2 / 4</div>
-          <img src="./img/ProjectDocumentation/GraphicArt/Slides-1920px/AmazonBuildOn-1920px.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">3 / 4</div>
-          <img src="./img/ProjectDocumentation/GraphicArt/Slides-1920px/87642_LH_HolidayLightGiftCard-1920px.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">4 / 4</div>
-          <img src="./img/ProjectDocumentation/GraphicArt/Slides-1920px/RenaissanceUnveiledCovers-1920px.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">5 / 4</div>
-          <img src="./img/ProjectDocumentation/GraphicArt/Slides-1920px/76207_SpringTestLifestyle_PortfolioPage-1920px.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">6 / 4</div>
-          <img src="./img/ProjectDocumentation/GraphicArt/Slides-1920px/BreakDanceLincoln-1920px.jpg" style="width:100%">
-        </div>
-
-        <!-- Next/previous controls -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <!-- Caption text -->
-        <div class="caption-container">
-          <p id="caption"></p>
-        </div>
-
-        <!-- MODAL Thumbnail CONTROLS -->
-        <div class="column">
-          <img class="demo" src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/82870-KFCColonel-300x200px.jpg" width="50%" onclick="currentSlide(1)" alt="KFC Photo-comp POP Display">
-        </div>
-
-        <div class="column">
-          <img class="demo" src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/AmazonBuildOn-300x200px.jpg" width="50%" onclick="currentSlide(2)" alt="AWS custom graphics">
-        </div>
-
-        <div class="column">
-          <img class="demo" src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/87642_LH_HolidayLightGiftCard-300x200px.jpg" width="50%" onclick="currentSlide(3)" alt="Longhorn Holiday Promo">
-        </div>
-
-        <div class="column">
-          <img class="demo" src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/RenaissanceUnveiledCovers-300x200px.jpg" width="50%" onclick="currentSlide(4)" alt="Custom Book Covers">
-        </div>
-
-        <div class="column">
-          <img class="demo" src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/76207_SpringTestLifestyle_PortfolioPage-300x200px.jpg" width="50%" onclick="currentSlide(4)" alt="LJS Print Ad">
-        </div>
-
-        <div class="column">
-          <img class="demo" src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/BreakDanceLincoln-300x200px.jpg" width="50%" onclick="currentSlide(4)" alt="Original Vector Illustration">
-        </div>
-      </div>
-    </div>
-    <!-- MODAL GALLERY END-->
 
     <section class="contact">
       <p><em>Say Hello!</em></p>
