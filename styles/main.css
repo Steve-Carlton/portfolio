@@ -69,6 +69,9 @@ h2:last-child {
 .welcome {
   background: rgba(16,25,110,1);
   margin: 1.5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .welcome header {
@@ -96,6 +99,7 @@ h2:last-child {
   border-radius: 8px;
   margin: 1rem 1.5rem 1rem;
   padding: 2rem 1.125rem 2rem 2rem;
+  width: 85%;
 }
 
 .xp {
@@ -110,6 +114,19 @@ h2:last-child {
   font-size: 2rem;
   font-weight: 400;
   background: rgba(16,25,110,1);
+}
+
+@media only screen and (min-width: 550px) {
+  .xp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  #web-card {
+    align-self: stretch;
+  }
 }
 
 .xp_wrap {
@@ -161,7 +178,9 @@ hr {
   color: white;
   background: rgba(16,25,110,1);
   text-align: center;
+  min-width: 90%;
   padding: 1rem;
+  padding-bottom: 3rem;
 }
 
 .work h3 {
@@ -171,21 +190,27 @@ hr {
 .thumbnails {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  gap: 2rem;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0 1rem 0;
+  margin: 1rem;
+  gap: 1rem;
 }
 
-.thumbnails img {
-  width: 100%;
-  border-radius: 8px;
-  transition: all .125s ease 0s;
+.thumbnails a, .thumbnails div {
+  width: fit-content
 }
+
+.thumbnails a img, .thumbnails img {
+    border-radius: 8px;
+    transition: all .125s ease 0s;
+    width: fit-content;
+    display: inline-block;
+    min-width: 90%;
+    max-width: 100%;
+
+  }
 
 .thumbnails img:hover, .thumbnails img:focus {
-  width: 100%;
   border-radius: 8px;
   transform: scale(1.05, 1.05);
 }
@@ -197,30 +222,41 @@ hr {
 
   }
 }
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 550px) {
   .thumbnails {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1.25rem;
+    padding: 0 4%;
+    justify-items: center;
+    grid-row-gap: .9rem;
   }
 }
 
-/* ==========MODAL BEGIN========== */
-.row {
-  background-color: rgba(16,25,110,1);
+@media only screen and (min-width: 1100px) {
+  .thumbnails {
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+  }
 }
+
+
+/* ==========MODAL BEGIN========== */
+/* .row {
+  background-color: rgba(16,25,110,1);
+} */
 
 /* .row > .column {
   padding: 0 8px;
 } */
 
-.row:after {
+/* .row:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 /* Create four equal columns that floats next to eachother */
 /* .column {
@@ -329,9 +365,9 @@ img.demo {
   opacity: 1;
 }
 
-img.hover-shadow {
+/* img.hover-shadow {
   transition: 0.3s;
-}
+} */
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
