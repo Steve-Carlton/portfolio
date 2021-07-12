@@ -309,6 +309,10 @@ hr {
   display: none;
 }
 
+.thumbnails > *:hover {
+  cursor: pointer;
+}
+
 /* Next & previous buttons */
 .prev,
 .next {
@@ -376,6 +380,7 @@ img.demo {
 
 .modalControls img {
   width: 8rem;
+  padding: 0 0 1rem 1rem;
 }
 
 img.hover-shadow {
