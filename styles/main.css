@@ -201,7 +201,6 @@ hr {
     display: inline-block;
     min-width: 90%;
     max-width: 100%;
-
   }
 
 .thumbnails img:hover, .thumbnails img:focus {
@@ -212,6 +211,213 @@ hr {
 .contact p:first-child {
   font-size: 1.8rem;
 }
+
+
+/* ==========MODAL BEGIN========== */
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1920px;
+}
+
+#sq {
+  text-align: center;
+}
+
+#sq img {
+  width: 65%;
+}
+
+/* The Close Button */
+.close {
+  color: grey;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #e3e3e3;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+.thumbnails > *:hover {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  padding: 16px;
+  margin-top: -55px;
+  color: grey;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  color: #e3e3e3;
+}
+
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 1rem;
+  color: #e3e3e3;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.modalControls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.modalControls img {
+  width: 6rem;
+  padding: .5rem;
+}
+
+/* img.demo:first-of-type {
+  padding-left: 0rem;
+} */
+
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, 100);
+}
+/* ==========MODAL END========== */
+
+.contact {
+  padding: 0 0 2rem;
+  width: auto;
+  text-align: center;
+  background: inherit;
+  color: white;
+  background: linear-gradient(0deg, rgba(0,2,37,1) 0%, rgba(16,25,110,1) 100%);
+}
+
+.contact p {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.contact p:nth-child(1n+2) {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.contact_icons {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: white;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+a .fab, a .far {
+  color: white;
+  margin: 1.5rem;
+  background: none;
+  font-size: 3.75rem;
+  justify-content: space-around;
+  transition: all .125s ease 0s;
+}
+
+.fab:hover, .far:hover {
+  transform: scale(1.125, 1.125) translateY(-0.5rem);
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: none;
+}
+
+footer h6 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  margin: 3rem 1rem 1rem;
+}
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Lato', sans-serif;
+*/
+
 /* ========= MOBILE SML ==========*/
 
 @media only screen and (min-width: 356px) {
@@ -243,6 +449,11 @@ hr {
     font-weight: 400;
     line-height: 2.4rem;
   }
+
+  .caption-container {
+    font-size: 1.25rem;
+  }
+
 
   .contact p:nth-child(1n+2) {
     padding: .5rem 1rem;
@@ -321,7 +532,6 @@ hr {
     padding: 0 1rem;
   }
 
-
   .xp {
     display: flex;
     flex-direction: row;
@@ -342,8 +552,6 @@ hr {
     font-size: 1.2rem;
   }
 
-
-
   .thumbnails {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -352,9 +560,19 @@ hr {
     justify-items: center;
     grid-row-gap: .9rem;
   }
+  
+  .caption-container {
+    font-size: 1.5rem;
+  }
 }
 
+
 /* ========= MOBILE LRG ==========*/
+/* @media only screen and (min-width: 658px) {
+  img.demo:last-of-type {
+    margin-right: 1rem;
+  }
+} */
 
 @media only screen and (min-width: 767px) {
 
@@ -442,203 +660,3 @@ hr {
     padding: 2rem 6rem 2rem;
   }
 }
-
-/* ==========MODAL BEGIN========== */
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 50px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: #000;
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1920px;
-}
-
-#sq {
-  text-align: center;
-}
-
-#sq img {
-  width: 65%;
-}
-
-/* The Close Button */
-.close {
-  color: grey;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #e3e3e3;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Hide the slides by default */
-.mySlides {
-  display: none;
-}
-
-.thumbnails > *:hover {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  padding: 16px;
-  margin-top: -55px;
-  color: grey;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #e3e3e3;
-}
-
-
-/* Caption text */
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 1rem;
-  color: #e3e3e3;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.5rem;
-}
-
-img.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-.modalControls {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.modalControls img {
-  width: 8rem;
-  padding: 0 0 1rem 1rem;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, 100);
-}
-/* ==========MODAL END========== */
-
-.contact {
-  padding: 0 0 2rem;
-  width: auto;
-  text-align: center;
-  background: inherit;
-  color: white;
-  background: linear-gradient(0deg, rgba(0,2,37,1) 0%, rgba(16,25,110,1) 100%);
-}
-
-.contact p {
-  margin: 0.5rem;
-  padding: 0.5rem;
-}
-
-.contact p:nth-child(1n+2) {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.contact_icons {
-  width: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  color: white;
-}
-
-.email {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 0;
-}
-
-a .fab, a .far {
-  color: white;
-  margin: 1.5rem;
-  background: none;
-  font-size: 3.75rem;
-  justify-content: space-around;
-  transition: all .125s ease 0s;
-}
-
-.fab:hover, .far:hover {
-  transform: scale(1.125, 1.125) translateY(-0.5rem);
-}
-
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background: none;
-}
-
-footer h6 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  font-weight: 200;
-  margin: 3rem 1rem 1rem;
-}
-
-/*
-font-family: 'Roboto', sans-serif;
-font-family: 'Lato', sans-serif;
-*/
