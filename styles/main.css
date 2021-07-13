@@ -125,14 +125,16 @@ h2:last-child {
 }
 
 .xp_wrap {
-  background: white;
+  background: #fff;
   width: auto;
   height: auto;
-  border-radius: 22px;
+  border-radius: 8px;
   align-items: center;
   text-decoration: none;
   padding: 2rem;
 }
+
+
 
 ul {
   list-style-type: none;
@@ -140,7 +142,6 @@ ul {
 }
 
 .xp_wrap_item {
-  background-color: none;
   align-items: stretch;
 }
 
@@ -148,33 +149,32 @@ ul {
   text-align: center;
   color: black;
   font-size: 1.5rem;
+  color: rgba(16,25,110,1);
 }
 
 .xp_wrap_item h4 {
   text-align: center;
-  color: grey;
+  color: rgba(16,25,110,1);
   font-size: 1.5rem;
   margin: 1rem 0 0;
 }
 
 hr {
-  color: grey;
+  color: #000;
   margin-bottom: .5rem;
 }
 
 .xp_wrap_item li {
   text-align: center;
-  color: black;
+  color: rgba(16,25,110,1);
   font-size: 1.25rem;
   font-family: "Lato", sans-serif;
 }
 
 .work {
-  color: white;
+  color: #fff;
   background: rgba(16,25,110,1);
   min-width: 90%;
-  /* padding: 1rem;
-  padding-bottom: 3rem; */
 }
 
 .work h3 {
@@ -407,7 +407,7 @@ hr {
 @media only screen and (min-width: 1300px) {
 
   .welcome article {
-    padding: 2rem 2rem 2rem;
+    padding: 2rem 3rem 2rem;
   }
 }
 
