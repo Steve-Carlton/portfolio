@@ -46,12 +46,13 @@ main {
 
 h1 {
   margin: 3rem auto 1rem;
+  padding: 0 .5rem;
   letter-spacing: .25rem;
-  font-size: 3.5rem;
+  font-size: 2.15rem;
 }
 
 h2:nth-child(2) {
-  font-size: 1.15rem;
+  font-size: 1rem;
   margin: 0 2rem 1.25rem;
   line-height: 1.5rem;
   letter-spacing: 0.25rem;
@@ -98,15 +99,15 @@ h2:last-child {
   text-align: center;
   border-radius: 8px;
   margin: 1rem 1.5rem 1rem;
-  padding: 2rem 1.75rem 2rem;
+  padding: 2rem 1rem 2rem;
   width: 85%;
 }
 
 .welcome #firstLine {
   padding: 4.5rem 0rem 1rem;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 2.4rem;
 }
 
 .xp {
@@ -209,36 +210,51 @@ hr {
   transform: scale(1.05, 1.05);
 }
 /* ========= MOBILE SML ==========*/
-@media only screen and (min-width: 304px) {
+
+@media only screen and (min-width: 356px) {
+
+  h1 {
+    margin: 3rem .5rem 1rem;
+    letter-spacing: .25rem;
+    font-size: 2.5rem;
+  }
+
   h2:nth-child(2) {
-    font-size: 1.75rem;
-    margin: 0 2rem 1.25rem;
+    font-size: 1.25rem;
+    margin: 0 2rem 1rem;
     line-height: 1.75rem;
     letter-spacing: 0.25rem;
   }
+
   h2:last-child {
-    font-size: 1.125rem;
+    font-size: 1rem;
     line-height: 1.5rem;
     margin: 0 1rem 0;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: .5rem;
   }
-}
 
-@media only screen and (min-width: 331px) {
-  h2:nth-child(2) {
-    font-size: 2rem;
-    margin: 0 2rem 1rem;
-    line-height: 2.25rem;
-    letter-spacing: 0.25rem;
+  .welcome #firstLine {
+    padding: 4.5rem 0rem 1rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2.4rem;
   }
+
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 446px) {
   h1 {
     margin: 3rem auto 1rem;
     letter-spacing: .25rem;
-    font-size: 4rem;
+    font-size: 3.5rem;
+  }
+
+  h2:nth-child(2) {
+    font-size: 1.75rem;
+    margin: 0 2rem 1rem;
+    line-height: 2.25rem;
+    letter-spacing: 0.25rem;
   }
 
   h2:last-child {
@@ -248,20 +264,48 @@ hr {
     font-weight: 300;
     letter-spacing: .5rem;
   }
+  .welcome #firstLine {
+    padding: 4.5rem 1rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+  }
 }
 
 @media only screen and (min-width: 550px) {
+
+  h1 {
+    margin: 3rem auto 1rem;
+    letter-spacing: .25rem;
+    font-size: 4rem;
+  }
+
+  h2:nth-child(2) {
+    font-size: 1.75rem;
+    margin: 0 2rem 1rem;
+    line-height: 2.25rem;
+    letter-spacing: 0.25rem;
+  }
+
+  h2:last-child {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    margin: 0.5rem;
+    font-weight: 300;
+    letter-spacing: .5rem;
+  }
+
   .welcome #firstLine {
-    padding: 4rem 1rem .5rem;
+    padding: 5rem 1rem 1.5rem;
     font-size: 2rem;
     font-weight: 400;
-    line-height: 2.5rem;
+    line-height: 3rem;
   }
 
   .welcome p {
     font-size: 1.5rem;
     font-weight: 200;
-    line-height: 2.25rem;
+    line-height: 2.7rem;
     text-align: center;
   }
 
@@ -292,16 +336,16 @@ hr {
 @media only screen and (min-width: 767px) {
 
   .welcome #firstLine {
-    padding: 4rem 0rem .5rem;
+    padding: 5rem 0rem 1.5rem;
     font-size: 2rem;
     font-weight: 400;
-    line-height: 2.5rem;
+    line-height: 3rem;
   }
 
   .welcome p {
     font-size: 1.5rem;
     font-weight: 200;
-    line-height: 2.25rem;
+    line-height: 2.7rem;
     text-align: center;
   }
 
@@ -333,18 +377,20 @@ hr {
 
   h2:last-child {
     font-size: 2rem;
+    font-weight: 300;
   }
 
   .welcome #firstLine {
-    padding: 4.5rem 1rem 0.5rem;
+    padding: 5rem 1rem 2rem;
     font-size: 2.5rem;
     font-weight: 400;
-    line-height: 3rem;
+    line-height: 3.5rem;
   }
 
   .welcome p {
     font-size: 1.75rem;
     padding: 0 2.5rem;
+    line-height: 3rem;
   }
 
   .work {
@@ -355,6 +401,13 @@ hr {
     width: 90%;
     justify-content: center;
     margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+
+  .welcome article {
+    padding: 2rem 2rem 2rem;
   }
 }
 
