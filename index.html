@@ -17,16 +17,16 @@
     <section class="masthead">
       <header>
         <h1>Steve Carlton</h1>
-        <h2>Web Developer <br>+<br> Graphic Artist</h2>
+        <h2>Web Developer<br>+<br>Graphic Artist</h2>
         <h2>Client-Focused Collaborator</h2>
       </header>
     </section>
-
     <section class="welcome">
-      <header>
-        <span>Welcome!<span>
-      </header>
-      <p>I'm a front-end developer and collaborator with excellent client-facing skills. I also have a background as a professional graphic artist. Want to make something? Let's connect and make your vision a reality!</p>
+      <article>
+        <p id="firstLine">I'm a front-end developer and collaborator with excellent client-facing skills.</p>
+        <p>I bring my background as a professional graphic artist to my work as a developer. Want to make something? Reach out and let's get to started!</p>
+      </article>
+      <img src="./img/SteveCarlton_NamePlateImage.jpg" alt="Steve Carlton self-portrait" width="25%">
     </section>
 
     <section class="xp">
@@ -83,9 +83,9 @@
       <!-- thumbnail gallery/modal onclick, display description on hover -->
       <h3>Projects</h3>
       <section class="thumbnails">
-        <a href="https://mcdsvrexperience.com" target="_blank"><img src="./img/ProjectDocumentation/Dev/McD_Tile300x200.jpg" alt=""></a>
-        <a href="https://admiring-shaw-47ed8b.netlify.app/" target="_blank"><img src="./img/ProjectDocumentation/Dev/SP_Tile300x200px.jpg" alt=""></a>
-        <a href="https://www.brucewilsonauthor.com" target="_blank"><img src="./img/ProjectDocumentation/Dev/BWJ_Tile300px.jpg" alt=""></a>
+        <a href="https://mcdsvrexperience.com" target="_blank"><img src="./img/ProjectDocumentation/Dev/McD_Tile300x200.jpg" alt="" class="hover-shadow"></a>
+        <a href="https://admiring-shaw-47ed8b.netlify.app/" target="_blank"><img src="./img/ProjectDocumentation/Dev/SP_Tile300x200px.jpg" alt="" class="hover-shadow"></a>
+        <a href="https://www.brucewilsonauthor.com" target="_blank"><img src="./img/ProjectDocumentation/Dev/BWJ_Tile300px.jpg" alt="" class="hover-shadow"></a>
         <!-- MODAL GALLERY BEGIN -->
         <!-- Images used to open the lightbox (thumbnails) -->
         <div><img src="./img/ProjectDocumentation/GraphicArt/Tiles-300x200px/82870-KFCColonel-300x200px.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow"></div>
@@ -100,6 +100,7 @@
       <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="modal-content">
+
           <div class="mySlides">
             <img src="./img/ProjectDocumentation/GraphicArt/Slides-1920px/82870-KFCColonel-1920px.jpg" style="width:100%">
           </div>
@@ -115,17 +116,18 @@
           <div class="mySlides">
             <img src="./img/ProjectDocumentation/GraphicArt/Slides-1920px/76207_SpringTestLifestyle_PortfolioPage-1920px.jpg" style="width:100%">
           </div>
-          <div class="mySlides">
-            <img src="./img/ProjectDocumentation/GraphicArt/Slides-1920px/BreakDanceLincoln-1920px.jpg" style="width:100%">
+          <div class="mySlides" id="sq">
+            <img src="./img/ProjectDocumentation/GraphicArt/Slides-1920px/BreakDanceLincoln-1920px.jpg">
           </div>
-          <!-- Next/previous controls -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
 
           <!-- Caption text -->
           <div class="caption-container">
             <p id="caption"></p>
           </div>
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
           <!-- MODAL Thumbnail CONTROLS -->
 
@@ -146,7 +148,8 @@
 
 
     <section class="contact">
-      <p><em>Say Hello!</em></p>
+      <p><em><strong>Got a project idea?</strong></em></p>
+      <p>Send a message and let's make it happen!</p>
       <div class="contact_icons">
         <a href="mailto:stcarlton@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
         <!-- top right fixed, go to sumbission form -->
