@@ -38,3 +38,16 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+// Keyboard controls
+
+document.onkeydown = function(event) {
+  var e = event || window.event;
+  if (e.keyCode == '37') { //LEFT ARROW
+    plusSlides(-1);
+  } else if (e.keyCode == '39' || e.keyCode == '32') { //RIGHT ARROW or SPACEBAR
+    plusSlides(1);
+  } else if (e.keyCode == '27') { //ESC
+    closeModal();
+  }
+}
