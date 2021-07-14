@@ -110,6 +110,10 @@ h2:last-child {
   line-height: 2.4rem;
 }
 
+em {
+  font-weight: 400;
+}
+
 .xp {
   display: flex;
   flex-direction: column;
