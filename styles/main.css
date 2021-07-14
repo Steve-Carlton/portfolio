@@ -152,7 +152,7 @@ ul {
 
 .xp_wrap_item h4 {
   text-align: center;
-  color: rgba(16,25,110,1);
+  color: rgba(17,32,110,0.7);
   font-size: 1.3rem;
   margin: 1rem 0 0;
 }
@@ -560,7 +560,7 @@ font-family: 'Lato', sans-serif;
     justify-items: center;
     grid-row-gap: .9rem;
   }
-  
+
   .caption-container {
     font-size: 1.5rem;
   }
