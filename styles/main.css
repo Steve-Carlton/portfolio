@@ -47,15 +47,24 @@ main {
 h1 {
   margin: 3rem auto 1rem;
   padding: 0 .5rem;
-  letter-spacing: .25rem;
+  letter-spacing: 0.35rem;
   font-size: 2.15rem;
 }
 
 .expertise {
   font-size: 1rem;
-  margin: 0 2rem 1.25rem;
+  margin: 1rem 2rem 1.25rem;
   line-height: 1.5rem;
   letter-spacing: 0.25rem;
+}
+
+.expertise h2 {
+  margin: .5rem;
+  line-height: 1.25rem;
+}
+
+.expertise h2:nth-of-type(even) {
+  margin-top: .75rem;
 }
 
 .tag {
@@ -432,13 +441,21 @@ font-family: 'Lato', sans-serif;
   line-height: 2.5rem;
   letter-spacing: 0.25rem;
 }
+.expertise h2 {
+  margin: .5rem;
+  line-height: 1.25rem;
+}
+
+.expertise h2:nth-of-type(even) {
+  margin-top: .75rem;
+}
+
 }
 
 @media only screen and (min-width: 356px) {
 
   h1 {
     margin: 3rem .5rem 1rem;
-    letter-spacing: .25rem;
     font-size: 2.5rem;
   }
 
@@ -449,8 +466,13 @@ font-family: 'Lato', sans-serif;
     letter-spacing: 0.25rem;
   }
 
-.expertise span {
-    display: none;
+  .expertise h2 {
+    margin: .5rem;
+    line-height: 1.5rem;
+  }
+
+  .expertise h2:nth-of-type(even) {
+    margin-top: .75rem;
   }
 
   .tag {
@@ -486,7 +508,6 @@ font-family: 'Lato', sans-serif;
 @media only screen and (min-width: 446px) {
   h1 {
     margin: 3rem auto 1rem;
-    letter-spacing: .25rem;
     font-size: 3.5rem;
   }
 
@@ -496,10 +517,12 @@ font-family: 'Lato', sans-serif;
     line-height: 3rem;
     letter-spacing: 0.25rem;
   }
+  .expertise h2 {
+    line-height: 2.25rem;
+  }
 
-  h2 span {
-    font-weight: 100;
-    display: none;
+  .expertise h2:nth-of-type(even) {
+    margin-top: .75rem;
   }
 
   .tag {
@@ -521,7 +544,6 @@ font-family: 'Lato', sans-serif;
 
   h1 {
     margin: 3rem auto 1rem;
-    letter-spacing: .25rem;
     font-size: 4rem;
   }
 
@@ -609,6 +631,15 @@ font-family: 'Lato', sans-serif;
     letter-spacing: 0.25rem;
   }
 
+  .expertise h2 {
+    margin: .5rem;
+    line-height: 3rem;
+  }
+
+  .expertise h2:nth-of-type(even) {
+    margin-top: .75rem;
+  }
+
   .tag {
     font-size: 1.75rem;
     line-height: 1.5rem;
@@ -660,10 +691,8 @@ font-family: 'Lato', sans-serif;
     font-size: 7rem;
   }
 
-  h2:nth-child(2) {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-    line-height: 3rem;
+  .expertise h2:nth-of-type(even) {
+    margin-top: .75rem;
   }
 
   .tag {
