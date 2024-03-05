@@ -1,7 +1,9 @@
 /* ==========NORMALIZE========== */
 @import 'normalize.css';
 
-*, html, body {
+*,
+html,
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -9,7 +11,7 @@
 
 body {
   height: 100vh;
-  background: rgb(0,2,37);
+  background: rgb(0, 2, 37);
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   font-weight: normal;
@@ -20,7 +22,7 @@ body {
 
 main {
   height: 100vh;
-  background: rgba(16,25,110,1);
+  background: rgba(16, 25, 110, 1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,8 +33,8 @@ main {
   font-size: 4rem;
   font-weight: 400;
   color: white;
-  background: rgb(0,2,37);
-  background: linear-gradient(0deg, rgba(0,2,37,0) 15%, rgba(0,2,37,1) 100%);
+  background: rgb(0, 2, 37);
+  background: linear-gradient(0deg, rgba(0, 2, 37, 0) 15%, rgba(0, 2, 37, 1) 100%);
 }
 
 .masthead header {
@@ -42,25 +44,28 @@ main {
   justify-content: center;
   text-align: center;
   height: inherit;
+  padding-bottom: 1rem;
 }
 
 h1 {
+  font-size: 7rem;
   margin: 3rem auto 1rem;
   padding: 0 .5rem;
   letter-spacing: 0.35rem;
-  font-size: 2.15rem;
+  padding-left: 2.5vw;
 }
 
+
 .expertise {
-  font-size: 1rem;
-  margin: 1rem 2rem 1.25rem;
-  line-height: 1.5rem;
+  font-size: 1.75rem;
+  margin: .5rem 2rem 1.25rem;
+  line-height: 3.75rem;
   letter-spacing: 0.25rem;
 }
 
 .expertise h2 {
   margin: .5rem;
-  line-height: 1.25rem;
+  line-height: 3rem;
 }
 
 .expertise h2:nth-of-type(even) {
@@ -68,15 +73,15 @@ h1 {
 }
 
 .tag {
-  font-size: .75rem;
+  font-size: 2rem;
   line-height: 1.5rem;
-  margin: 0 1rem 0;
-  font-weight: 400;
+  margin: .75rem 1rem;
+  font-weight: 300;
   letter-spacing: .5rem;
 }
 
 .welcome {
-  background: rgba(16,25,110,1);
+  background: rgba(16, 25, 110, 1);
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -108,15 +113,27 @@ h1 {
   text-align: center;
   border-radius: 8px;
   margin: 1rem 1.5rem 1rem;
-  padding: 2rem 1rem 2rem;
+  padding: 2.25rem 6rem 4.5rem;
   width: 85%;
 }
 
+
 .welcome #firstLine {
-  padding: 4.5rem 0rem 1rem;
-  font-size: 1.2rem;
-  line-height: 2.4rem;
+  padding: 5rem 0.25rem .5rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 3.25rem;
 }
+
+
+
+
+#firstp {
+  padding: 0.5rem 4rem 0;
+  max-width: 1200px;
+  font-size: 1.5rem;
+}
+
 
 em {
   font-weight: 600;
@@ -124,8 +141,8 @@ em {
 
 .xp {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 1.5rem;
   padding: 1.5rem;
@@ -133,7 +150,7 @@ em {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   font-weight: 400;
-  background: rgba(16,25,110,1);
+  background: rgba(16, 25, 110, 1);
 }
 
 .xp_wrap {
@@ -145,6 +162,10 @@ em {
   align-items: center;
   text-decoration: none;
   padding: 2rem;
+}
+
+#web-card {
+  align-self: stretch;
 }
 
 ul {
@@ -160,12 +181,12 @@ ul {
   text-align: center;
   color: black;
   font-size: 1.5rem;
-  color: rgba(16,25,110,1);
+  color: rgba(16, 25, 110, 1);
 }
 
 .xp_wrap_item h4 {
   text-align: center;
-  color: rgba(17,32,110,0.7);
+  color: rgba(17, 32, 110, 0.7);
   font-size: 1.3rem;
   margin: 1rem 0 0;
 }
@@ -177,30 +198,32 @@ hr {
 
 .xp_wrap_item li {
   text-align: center;
-  color: rgba(16,25,110,1);
+  color: rgba(16, 25, 110, 1);
   font-size: 1.25rem;
   font-family: "Lato", sans-serif;
   line-height: 2rem;
 }
 
-.work, .brands {
+.work,
+.brands {
   color: #fff;
-  background: rgba(16,25,110,1);
+  background: rgba(16, 25, 110, 1);
   min-width: 90%;
 }
 
-.brands, .container {
-    display: flex; 
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    padding: 1.5rem;
-    width: auto;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    background: rgba(16,25,110,1);
+.brands,
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  width: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  background: rgba(16, 25, 110, 1);
 }
 
 .brands-line01 {
@@ -212,7 +235,8 @@ hr {
   flex-wrap: wrap;
 }
 
-.brands-line01, .brands-line02 {
+.brands-line01,
+.brands-line02 {
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -221,7 +245,8 @@ hr {
   gap: 2rem;
 }
 
-.brands-line01, .brands-line02 {
+.brands-line01,
+.brands-line02 {
   width: 100%;
   height: auto;
 }
@@ -238,33 +263,41 @@ hr {
 
 
 .work h3 {
-  margin:  1rem 0;
+  margin: 2rem 0 1rem;
   text-align: center;
 }
 
 .thumbnails {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1.25rem;
+  justify-items: center;
+  grid-row-gap: 0.9rem;
+  width: 90%;
+  justify-content: center;
+  margin: auto;
 }
 
-.thumbnails a, .thumbnails div,.brands-line01, .brands-line02 {
+.thumbnails a,
+.thumbnails div,
+.brands-line01,
+.brands-line02 {
   width: fit-content;
 }
 
-.thumbnails a img, .thumbnails img {
-    border-radius: 8px;
-    transition: all .125s ease 0s;
-    width: fit-content;
-    display: inline-block;
-    min-width: 90%;
-    max-width: 100%;
-  }
+.thumbnails a img,
+.thumbnails img {
+  border-radius: 8px;
+  transition: all .125s ease 0s;
+  width: fit-content;
+  display: inline-block;
+  min-width: 90%;
+  max-width: 100%;
+}
 
-.thumbnails img:hover, .thumbnails img:focus {
+.thumbnails img:hover,
+.thumbnails img:focus {
   border-radius: 8px;
   transform: scale(1.05, 1.05);
 }
@@ -329,7 +362,7 @@ hr {
   display: none;
 }
 
-.thumbnails > *:hover {
+.thumbnails>*:hover {
   cursor: pointer;
 }
 
@@ -399,22 +432,23 @@ img.demo {
 } */
 
 
-img.hover-shadow {
+/* img.hover-shadow {
   transition: 0.3s;
-}
+} */
 
 .hover-shadow:hover {
   box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, 100);
 }
+
 /* ==========MODAL END========== */
 
 .contact {
-  padding: 0 0 2rem;
+  padding: 4rem;
   width: auto;
   text-align: center;
   background: inherit;
   color: white;
-  background: linear-gradient(0deg, rgba(0,2,37,1) 0%, rgba(16,25,110,1) 100%);
+  background: linear-gradient(0deg, rgba(0, 2, 37, 1) 0%, rgba(16, 25, 110, 1) 100%);
 }
 
 .contact p {
@@ -445,7 +479,8 @@ img.hover-shadow {
   padding-bottom: 0;
 }
 
-a .fab, a .far {
+a .fab,
+a .far {
   color: white;
   margin: 1.5rem;
   background: none;
@@ -454,7 +489,8 @@ a .fab, a .far {
   transition: all .125s ease 0s;
 }
 
-.fab:hover, .far:hover {
+.fab:hover,
+.far:hover {
   transform: scale(1.125, 1.125) translateY(-0.5rem);
 }
 
@@ -474,307 +510,257 @@ footer h6 {
   margin: 3rem 1rem 1rem;
 }
 
-/*
-font-family: 'Roboto', sans-serif;
-font-family: 'Lato', sans-serif;
-*/
+/* ~~~~~~~~~~MEDIA QUERIES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* ~~~~~~~~~~MEDIA QUERIES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* ~~~~~~~~~~MEDIA QUERIES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* ~~~~~~~~~~MEDIA QUERIES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/* ========= MOBILE SML ==========*/
-@media only screen and (max-width: 355px) {
-.expertise span {
-  display: none;
-}
-.expertise {
-  font-size: .75rem;
-  margin: 0 2rem 1rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.25rem;
-}
-.expertise h2 {
-  margin: .5rem;
-  line-height: 1.25rem;
+/* ========= DESKTOP ==========*/
+
+@media only screen and (max-width: 1200px) {
+
+
+  .welcome article {
+    padding: 2.25rem 2rem 3.5rem;
+  }
+
+  .welcome #firstLine {
+    padding: 4.5rem 0.25rem 0.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .welcome p {
+    font-size: 1rem;
+  }
+
+  #firstp {
+    padding: 0.25rem 4rem 0;
+    max-width: 1200px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
 }
 
-.expertise h2:nth-of-type(even) {
-  margin-top: .75rem;
-}
+/* ========= TABLET ==========*/
+@media only screen and (max-width: 900px) {
 
-}
-
-@media only screen and (min-width: 356px) {
+  .expertise {
+    margin-top: 0;
+  }
 
   h1 {
-    margin: 3rem .5rem 1rem;
+    font-size: 5.5rem;
+  }
+
+  h2 {
     font-size: 2.5rem;
   }
 
-  .expertise {
-    font-size: 1rem;
-    margin: 0 2rem 1rem;
-    line-height: 2.5rem;
-    letter-spacing: 0.25rem;
-  }
-
   .expertise h2 {
-    margin: .5rem;
-    line-height: 1.5rem;
-  }
-
-  .expertise h2:nth-of-type(even) {
-    margin-top: .75rem;
-  }
-
-  .tag {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin: 0 1rem 0;
-    font-weight: 400;
-    letter-spacing: .5rem;
-  }
-
-  .welcome #firstLine {
-    padding: 4.5rem 0rem 1rem;
-    font-size: 1.3rem;
-    font-weight: 400;
-    line-height: 2.4rem;
-  }
-
-  .caption-container {
-    font-size: 1.25rem;
-  }
-
-
-  .contact p:nth-child(1n+2) {
-    padding: .5rem 1rem;
-  }
-
-  .contact p:first-child {
-    font-size: 2rem;
-  }
-
-}
-
-@media only screen and (min-width: 446px) {
-  h1 {
-    margin: 3rem auto 1rem;
-    font-size: 3.5rem;
-  }
-
-  .expertise {
-    font-size: 1.3rem;
-    margin: 0 2rem 1rem;
-    line-height: 3rem;
-    letter-spacing: 0.25rem;
-  }
-  .expertise h2 {
-    line-height: 2.25rem;
-  }
-
-  .expertise h2:nth-of-type(even) {
-    margin-top: .75rem;
-  }
-
-  .tag {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
     margin: 0.5rem;
-    font-weight: 300;
-    letter-spacing: .5rem;
-  }
-  .welcome #firstLine {
-    padding: 4.5rem 1rem 1.5rem;
-    font-size: 1.5rem;
-    font-weight: 400;
     line-height: 3rem;
+  }
+
+  .tag {
+    font-size: 1.75rem;
+    margin-top: 0.25rem;
   }
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (max-width: 850px) {
+  .welcome article {
+    padding: 2.25rem 1rem 3.5rem;
+  }
+
+  .expertise h2 {
+    margin: 0.5rem;
+    line-height: 3rem;
+  }
+
+  .welcome article {
+    padding-bottom: 3rem;
+  }
+
+  .welcome #firstLine {
+    padding-top: 4rem;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+
+  #firstp {
+    padding: 0.25rem 2rem 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+}
+
+
+/* ========= MOBILE ==========*/
+
+@media only screen and (max-width: 694px) {
+  .masthead header {
+    padding-bottom: 0rem;
+  }
 
   h1 {
     margin: 3rem auto 1rem;
     font-size: 4rem;
   }
 
-  .expertise {
-    font-size: 1.5rem;
-    margin: 0 2rem 1rem;
-    line-height: 3.75rem;
-    letter-spacing: 0.25rem;
-  }
-
-  .tag {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    margin: 0.5rem;
-    font-weight: 300;
-    letter-spacing: .5rem;
-  }
-
-  .welcome #firstLine {
-    padding: 5rem 1rem 1.5rem;
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 3rem;
-  }
-
-  .welcome p {
-    font-size: 1.5rem;
-    line-height: 2.7rem;
-    text-align: center;
-    padding: 0 1rem;
-  }
-
-  .xp {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  .xp_wrap {
-    padding: 2rem 1.2rem;
-  }
-
-  #web-card {
-    align-self: stretch;
-  }
-
-  #art-card ul li {
-    font-size: 1.2rem;
-  }
-
-  .thumbnails {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 1.25rem;
-    justify-items: center;
-    grid-row-gap: .9rem;
-  }
-
-  .caption-container {
-    font-size: 1.5rem;
-  }
-}
-
-
-/* ========= MOBILE LRG ==========*/
-/* @media only screen and (min-width: 658px) {
-  img.demo:last-of-type {
-    margin-right: 1rem;
-  }
-} */
-
-@media only screen and (min-width: 767px) {
-
-  h1 {
-    font-size: 5.5rem;
+  h2 {
+    font-size: 2.25rem;
+    font-weight: 500;
   }
 
   .expertise {
-    font-size: 1.75rem;
-    margin: 0 2rem 1rem;
-    line-height: 3.75rem;
-    letter-spacing: 0.25rem;
+    margin-top: .75rem;
   }
 
   .expertise h2 {
-    margin: .5rem;
-    line-height: 3rem;
-  }
-
-  .expertise h2:nth-of-type(even) {
-    margin-top: .75rem;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
   }
 
   .tag {
-    font-size: 1.75rem;
-    line-height: 1.5rem;
-    margin: 0.5rem;
-    font-weight: 300;
-    letter-spacing: .5rem;
+    font-size: 1.5rem;
+    line-height: 2.15rem;
+  }
+
+  .welcome article {
+    padding: 2.25rem .75rem 2.5rem;
   }
 
   .welcome #firstLine {
-    padding: 5rem 0rem 1.5rem;
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 3rem;
-  }
-
-  .welcome p {
-    padding: 0 1rem;
+    padding-top: 3.5rem;
     font-size: 1.5rem;
-    line-height: 2.7rem;
-    text-align: center;
+    line-height: 2rem;
+    margin-top: .5rem;
   }
 
-  .work {
-    padding-bottom: 1.5rem;
+  #firstp {
+    padding: 0.25rem 2rem 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
-  .xp_wrap {
-    padding: 2rem;
+
+  .contact p:first-child {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
   }
 
-  .work h3 {
-    font-size: 2.5rem;
-  }
-
-  #art-card ul li {
-    font-size: 1.25rem;
-  }
-
-  .contact {
-    padding: 1rem 0 0;
-  }
 }
 
-/* ========= DESKTOP ==========*/
+@media only screen and (max-width: 575px) {
 
-@media only screen and (min-width: 1000px) {
 
-  h1 {
-    font-size: 7rem;
-  }
-
-  .expertise h2:nth-of-type(even) {
+  .tag {
     margin-top: .75rem;
   }
 
   .tag {
-    font-size: 2rem;
-    font-weight: 300;
-  }
-
-  .welcome #firstLine {
-    padding: 5rem 1rem 2rem;
-    font-size: 2.5rem;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 3.5rem;
+    line-height: 1.75rem;
   }
 
-  .welcome p {
-    font-size: 1.75rem;
-    line-height: 3rem;
+  .expertise h2 {
+    font-size: 2.25rem;
+    line-height: 1.75rem;
   }
 
-  .work {
-    padding: 0 4rem 1.5rem;
+  .expertise {
+    margin-bottom: .5rem;
+  }
+
+  .xp {
+    flex-direction: column-reverse;
+
+  }
+
+  #web-card {
+    align-self: center;
   }
 
   .thumbnails {
-    width: 90%;
-    justify-content: center;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    gap: 1rem;
   }
+
+  .work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work h3 {
+    margin: 2rem 0 .25rem;
+    text-align: center;
+  }
+
+
+
+  .welcome #firstLine {
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+  }
+
+  #firstp {
+    font-size: 1rem;
+  }
+
+  .contact {
+    padding: 1rem;
+  }
+
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (max-width: 535px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .expertise {
+    margin: .75rem 2rem 1.25rem
+  }
+
+  .expertise h2 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
+
+
 
   .welcome article {
-    padding: 2rem 2.3rem 2rem;
+    padding: 2.25rem .75rem 2rem;
   }
+
+}
+
+@media only screen and (max-width: 467px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .expertise h2:nth-of-type(even) {
+    margin-top: .5rem;
+  }
+
+  .expertise h2 {
+    font-size: 1.5rem;
+    margin: .25rem;
+  }
+
+  .expertise {
+    margin-bottom: .5rem;
+  }
+
 }
