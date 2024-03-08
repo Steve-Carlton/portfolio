@@ -427,15 +427,6 @@ img.demo {
   padding: .5rem;
 }
 
-/* img.demo:first-of-type {
-  padding-left: 0rem;
-} */
-
-
-/* img.hover-shadow {
-  transition: 0.3s;
-} */
-
 .hover-shadow:hover {
   box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, 100);
 }
@@ -517,7 +508,7 @@ footer h6 {
 
 /* ========= DESKTOP ==========*/
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1205px) {
 
 
   .welcome article {
@@ -535,7 +526,7 @@ footer h6 {
   }
 
   #firstp {
-    padding: 0.25rem 4rem 0;
+    padding: 0.25rem 1rem 0;
     max-width: 1200px;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -544,7 +535,7 @@ footer h6 {
 }
 
 /* ========= TABLET ==========*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 945px) {
 
   .expertise {
     margin-top: 0;
@@ -566,6 +557,12 @@ footer h6 {
   .tag {
     font-size: 1.75rem;
     margin-top: 0.25rem;
+  }
+
+  #firstp {
+    padding: 0.25rem 1rem 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -635,8 +632,8 @@ footer h6 {
 
   .welcome #firstLine {
     padding-top: 3.5rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     margin-top: .5rem;
   }
 
@@ -705,10 +702,8 @@ footer h6 {
     text-align: center;
   }
 
-
-
   .welcome #firstLine {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     line-height: 1.75rem;
     font-weight: 500;
   }
@@ -737,8 +732,6 @@ footer h6 {
     line-height: 1.75rem;
   }
 
-
-
   .welcome article {
     padding: 2.25rem .75rem 2rem;
   }
@@ -748,6 +741,21 @@ footer h6 {
 @media only screen and (max-width: 467px) {
   h1 {
     font-size: 2.5rem;
+  }
+
+  .welcome #firstLine {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .welcome #firstp {
+    font-size: .95rem;
+    line-height: 1.5rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .expertise h2:nth-of-type(even) {
