@@ -478,8 +478,7 @@ img.demo {
   transition: all 0.125s ease 0s;
 }
 
-.fab:hover,
-.far:hover {
+.icons:hover {
   transform: scale(1.125, 1.125) translateY(-0.5rem);
 }
 
