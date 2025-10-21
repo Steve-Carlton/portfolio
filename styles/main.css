@@ -469,12 +469,11 @@ img.demo {
   padding-bottom: 0;
 }
 
-img.icons {
+.icons {
   color: white;
   border: 2px solid red;
   margin: 1.5rem;
   background: none;
-  size: 60px;
   justify-content: space-around;
   transition: all 0.125s ease 0s;
 }
