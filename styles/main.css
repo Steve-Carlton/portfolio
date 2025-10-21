@@ -471,7 +471,8 @@ img.demo {
 
 a .fab,
 a .far,
-svg {
+svg,
+.contact_icons {
   color: white;
   border: 2px solid red;
   margin: 1.5rem;
