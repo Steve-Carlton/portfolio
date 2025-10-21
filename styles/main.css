@@ -473,6 +473,7 @@ a .fab,
 a .far,
 svg {
   color: white;
+  border: 2px solid red;
   margin: 1.5rem;
   background: none;
   font-size: 3.75rem;
