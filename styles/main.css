@@ -1,5 +1,5 @@
 /* ==========NORMALIZE========== */
-@import 'normalize.css';
+@import "normalize.css";
 
 *,
 html,
@@ -12,7 +12,7 @@ body {
 body {
   height: 100vh;
   background: rgb(0, 2, 37);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: normal;
   /* display: flex;
@@ -29,12 +29,16 @@ main {
 }
 
 .masthead {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 4rem;
   font-weight: 400;
   color: white;
   background: rgb(0, 2, 37);
-  background: linear-gradient(0deg, rgba(0, 2, 37, 0) 15%, rgba(0, 2, 37, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 2, 37, 0) 15%,
+    rgba(0, 2, 37, 1) 100%
+  );
 }
 
 .masthead header {
@@ -50,34 +54,33 @@ main {
 h1 {
   font-size: 7rem;
   margin: 3rem auto 1rem;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   letter-spacing: 0.35rem;
   padding-left: 2.5vw;
 }
 
-
 .expertise {
   font-size: 1.75rem;
-  margin: .5rem 2rem 1.25rem;
+  margin: 0.5rem 2rem 1.25rem;
   line-height: 3.75rem;
   letter-spacing: 0.25rem;
 }
 
 .expertise h2 {
-  margin: .5rem;
+  margin: 0.5rem;
   line-height: 3rem;
 }
 
 .expertise h2:nth-of-type(even) {
-  margin-top: .75rem;
+  margin-top: 0.75rem;
 }
 
 .tag {
   font-size: 2rem;
   line-height: 1.5rem;
-  margin: .75rem 1rem;
+  margin: 0.75rem 1rem;
   font-weight: 300;
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
 }
 
 .welcome {
@@ -117,23 +120,18 @@ h1 {
   width: 85%;
 }
 
-
 .welcome #firstLine {
-  padding: 5rem 0.25rem .5rem;
+  padding: 5rem 0.25rem 0.5rem;
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 3.25rem;
 }
-
-
-
 
 #firstp {
   padding: 0.5rem 4rem 0;
   max-width: 1200px;
   font-size: 1.5rem;
 }
-
 
 em {
   font-weight: 600;
@@ -147,7 +145,7 @@ em {
   gap: 1.5rem;
   padding: 1.5rem;
   width: auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   background: rgba(16, 25, 110, 1);
@@ -193,7 +191,7 @@ ul {
 
 hr {
   color: #000;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .xp_wrap_item li {
@@ -220,7 +218,7 @@ hr {
   text-align: center;
   padding: 1.5rem;
   width: auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   background: rgba(16, 25, 110, 1);
@@ -258,9 +256,8 @@ hr {
 .brands img {
   gap: 1.5rem;
   width: fit-content;
-  max-width: 100%
+  max-width: 100%;
 }
-
 
 .work h3 {
   margin: 2rem 0 1rem;
@@ -289,7 +286,7 @@ hr {
 .thumbnails a img,
 .thumbnails img {
   border-radius: 8px;
-  transition: all .125s ease 0s;
+  transition: all 0.125s ease 0s;
   width: fit-content;
   display: inline-block;
   min-width: 90%;
@@ -305,7 +302,6 @@ hr {
 .contact p:first-child {
   font-size: 1.8rem;
 }
-
 
 /* ==========MODAL BEGIN========== */
 
@@ -362,7 +358,7 @@ hr {
   display: none;
 }
 
-.thumbnails>*:hover {
+.thumbnails > *:hover {
   cursor: pointer;
 }
 
@@ -395,14 +391,13 @@ hr {
   color: #e3e3e3;
 }
 
-
 /* Caption text */
 .caption-container {
   text-align: center;
   background-color: black;
   padding: 1rem;
   color: #e3e3e3;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1rem;
 }
 
@@ -424,7 +419,7 @@ img.demo {
 
 .modalControls img {
   width: 6rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .hover-shadow:hover {
@@ -439,7 +434,11 @@ img.demo {
   text-align: center;
   background: inherit;
   color: white;
-  background: linear-gradient(0deg, rgba(0, 2, 37, 1) 0%, rgba(16, 25, 110, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 2, 37, 1) 0%,
+    rgba(16, 25, 110, 1) 100%
+  );
 }
 
 .contact p {
@@ -447,7 +446,7 @@ img.demo {
   padding: 0.5rem;
 }
 
-.contact p:nth-child(1n+2) {
+.contact p:nth-child(1n + 2) {
   font-size: 1.5rem;
   line-height: 2rem;
 }
@@ -471,20 +470,20 @@ img.demo {
 }
 
 a .fab,
-a .far {
+a .far,
+svg {
   color: white;
   margin: 1.5rem;
   background: none;
   font-size: 3.75rem;
   justify-content: space-around;
-  transition: all .125s ease 0s;
+  transition: all 0.125s ease 0s;
 }
 
 .fab:hover,
 .far:hover {
   transform: scale(1.125, 1.125) translateY(-0.5rem);
 }
-
 
 footer {
   display: flex;
@@ -495,7 +494,7 @@ footer {
 }
 
 footer h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 200;
   margin: 3rem 1rem 1rem;
@@ -509,8 +508,6 @@ footer h6 {
 /* ========= DESKTOP ==========*/
 
 @media only screen and (max-width: 1205px) {
-
-
   .welcome article {
     padding: 2.25rem 2rem 3.5rem;
   }
@@ -531,12 +528,10 @@ footer h6 {
     font-size: 1.5rem;
     line-height: 2rem;
   }
-
 }
 
 /* ========= TABLET ==========*/
 @media only screen and (max-width: 945px) {
-
   .expertise {
     margin-top: 0;
   }
@@ -591,9 +586,7 @@ footer h6 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
-
 }
-
 
 /* ========= MOBILE ==========*/
 
@@ -613,7 +606,7 @@ footer h6 {
   }
 
   .expertise {
-    margin-top: .75rem;
+    margin-top: 0.75rem;
   }
 
   .expertise h2 {
@@ -627,14 +620,14 @@ footer h6 {
   }
 
   .welcome article {
-    padding: 2.25rem .75rem 2.5rem;
+    padding: 2.25rem 0.75rem 2.5rem;
   }
 
   .welcome #firstLine {
     padding-top: 3.5rem;
     font-size: 1.25rem;
     line-height: 1.75rem;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
 
   #firstp {
@@ -643,19 +636,15 @@ footer h6 {
     line-height: 1.5rem;
   }
 
-
   .contact p:first-child {
     font-size: 1.5rem;
     line-height: 2.25rem;
   }
-
 }
 
 @media only screen and (max-width: 575px) {
-
-
   .tag {
-    margin-top: .75rem;
+    margin-top: 0.75rem;
   }
 
   .tag {
@@ -670,12 +659,11 @@ footer h6 {
   }
 
   .expertise {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   .xp {
     flex-direction: column-reverse;
-
   }
 
   #web-card {
@@ -698,7 +686,7 @@ footer h6 {
   }
 
   .work h3 {
-    margin: 2rem 0 .25rem;
+    margin: 2rem 0 0.25rem;
     text-align: center;
   }
 
@@ -715,7 +703,6 @@ footer h6 {
   .contact {
     padding: 1rem;
   }
-
 }
 
 @media only screen and (max-width: 535px) {
@@ -724,7 +711,7 @@ footer h6 {
   }
 
   .expertise {
-    margin: .75rem 2rem 1.25rem
+    margin: 0.75rem 2rem 1.25rem;
   }
 
   .expertise h2 {
@@ -733,9 +720,8 @@ footer h6 {
   }
 
   .welcome article {
-    padding: 2.25rem .75rem 2rem;
+    padding: 2.25rem 0.75rem 2rem;
   }
-
 }
 
 @media only screen and (max-width: 467px) {
@@ -752,23 +738,22 @@ footer h6 {
   }
 
   .welcome #firstp {
-    font-size: .95rem;
+    font-size: 0.95rem;
     line-height: 1.5rem;
     padding-left: 0;
     padding-right: 0;
   }
 
   .expertise h2:nth-of-type(even) {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
 
   .expertise h2 {
     font-size: 1.5rem;
-    margin: .25rem;
+    margin: 0.25rem;
   }
 
   .expertise {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
-
 }
